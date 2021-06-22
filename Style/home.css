@@ -1,0 +1,68 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+
+    grid-template-areas:
+    'header header'
+     'left right'
+}
+
+header{
+    grid-area: header;
+}
+
+#bg{
+    grid-area: left;
+    
+    background: url('/NLW/assetest/home-bg-img.svg') no-repeat top/contain;
+    background-position: -7rem;
+}
+
+main{
+    grid-area: right;
+
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+main .container{
+    width: min(36.3rem, 100%);
+    
+
+}
+
+main h2 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--black);
+    font-size: clamp(20px, 5vw, 2.8rem);
+    margin-bottom: 1.4rem;
+}
+
+
+input{
+    border: .2rem solid var(--gray-blue);
+    padding: 1.6rem;
+    
+}
+input,button, .button{
+    width: 100%;
+    margin-bottom: 1.8rem;
+    
+}
+
+/*separetor*/
+.separator{
+
+}
+
+.separator div:nth-child(1),
+.separator div:nth-child(3){
+    background: var(--gray-blue);
+    width: 100%;
+    height: 1px;
+}
+
+
+
