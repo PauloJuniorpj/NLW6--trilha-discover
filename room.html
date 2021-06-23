@@ -9,6 +9,7 @@
         <!---Stylo do css-->
         <link rel="stylesheet" href="Style/global.css">
         <link rel="stylesheet" href="Style/room.css">
+        <link rel="stylesheet" href="Style/modal.css">
         
         
         <!----Este link sao as fontes das letras do site -->
@@ -56,7 +57,7 @@
                         <div class="question-wrapper">
                             <div class="question-content">
                                 <div class="user">
-                                    <img src="assetest/Avatar.svg" alt="Avatar">
+                                    <img src="assetest/user.svg" alt="Avatar">
                                 </div>
                                 <div class="question">
                                     <p>Qual a diferença entre const, var e let no JavaScript</p>
@@ -74,9 +75,88 @@
                                 </a>
                             </div>
                         </div>
+                        <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assetest/user.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>O que é Typescript?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="actions">
+                                <a href="#" class="check">
+                                    <img src="assetest/check.svg" alt="Marcar como lida">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="assetest/trash.svg" alt="Excluir">
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
+
+                         <div class="question-wrapper">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assetest/user.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>Você acha que ja esta pronto pra alcançar um novo nivel na tecnologia que você estuda ? Defina seu foco pra seguir em frente? Tente sempre aprimorar seus niveis de estudos, nao deixe nada passar por que a gente vai ser vitorioso em todas as lutas travadas, mantenha a persistencia nao desistir e fundamental pra aprender qual quer tecnologia </p>
+                                </div>
+                            </div>
+                            
+                            <div class="actions">
+                                <a href="#" class="check">
+                                    <img src="assetest/check.svg" alt="Marcar como lida">
+                                    Marcar como lida
+                                </a>
+                                <a href="#" class="delete">
+                                    <img src="assetest/trash.svg" alt="Excluir">
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="question-wrapper read">
+                            <div class="question-content">
+                                <div class="user">
+                                    <img src="assetest/user.svg" alt="Avatar">
+                                </div>
+                                <div class="question">
+                                    <p>O que é javascript?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="actions">
+                                <a href="#" class="delete">
+                                    <img src="assetest/trash.svg" alt="Excluir">
+                                    Excluir
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </section>
             </main>
+        </div>
+
+        <!----MOOODALL------>
+        <div class="modal-wrapper">
+            <div class="modal">
+                <h2>Excluir Pergunta</h2>
+                <p>Tem certeza que você deseja exlcuir esta pergunta?</p>
+
+                <form action="#">
+                    <label class="sr-only" for-id="password" > Digite sua senha admin</label>
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha"/>
+
+                    <div class="buttons">
+                        <div class="button grey">Cancelar</div>
+                        <button class="red">Sim, excluir</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </body>
 </html>

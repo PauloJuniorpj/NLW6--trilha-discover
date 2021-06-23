@@ -21,6 +21,7 @@ html{
     --gray-blue: #A1B2CD;
     --gray-medium: #D3D9E2;
     --gray-ligth: #E5EAF1;
+    --gray-medium: #EAECF2;
     
     font-size: 10px;
 }
@@ -58,7 +59,7 @@ input, button, .button{
     height: 5rem;
 }
 button, .button{
-    font-family: 'Poppins';
+    font-family: 'Poppins' sans-serif; 
     font-weight: 500;
     line-height: 0;
 
@@ -78,7 +79,7 @@ button:hover, .button:hover{
     filter: brightness(1.2);
 }
 
-button > img
+button > img,
 .button >img{
     margin-right: 1rem;
     width: 2rem;
@@ -89,6 +90,22 @@ button.outlined,
     color: var(--blue);
     border: .2rem solid var(--blue)
 }
+
+button.red,
+.button.red{
+    background: var(--red);
+    color: var(--white); 
+}
+
+button.grey,
+.button.grey{
+    background: var(--gray-ligth);
+    color: var(--gray-dark);
+}
+
+
+/***Header****/
+
 .content header{
     width: 80%;
     margin: 3.5rem auto;
